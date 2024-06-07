@@ -1,0 +1,36 @@
+
+.PictureBox {
+  display: flex;
+  width: 22rem;
+  height: 20rem;
+  background-color: rgb(128, 128, 128, 0.95);
+  flex-direction: column;
+  box-shadow: 0px 17px 5px 6px rgba(0, 0, 0, 0.75);
+  border: 16px double rgb(13, 24, 33);
+  padding: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ImageFix {
+  opacity: 100% !important;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.PictureFrame {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  border: 1rem solid black;
+}
+
+.PictureHeader {
+  font-family: dg;
+  font-size: 32px;
+  color: ghostwhite;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin-bottom: 1rem;
+  user-select: none;
+}

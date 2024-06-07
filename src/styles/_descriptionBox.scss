@@ -1,0 +1,36 @@
+.DescriptionBox {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    height: 35rem;
+    background-color: rgb(128, 128, 128, 0.95);
+    margin-top: 10rem;
+    box-shadow: 0px 17px 5px 6px rgba(0, 0, 0, 0.75);
+    margin-top: 10rem;
+    padding: 2rem;
+    border: 16px double rgb(13, 24, 33);
+
+    //testing
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+
+.DescriptionHeader {
+    width: 100%;
+    text-align: center;
+    font-family: dg;
+    font-weight: bold;
+    color: ghostwhite;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 55px;
+    margin-bottom: 2rem;
+    user-select: none;
+}
+
+.DescriptionText {
+    font-family: tandy;
+    //testing
+    font-size: 35px;
+    color: ghostwhite;
+    user-select: none;
+}

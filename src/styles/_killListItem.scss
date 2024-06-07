@@ -1,0 +1,47 @@
+.KillListItem{
+    background-color:  rgb(128, 128, 128);
+    box-shadow: 4px 4px 0px 4px rgba(42, 168, 242, 1);
+    height: 5rem;
+    margin-left: -4px;
+    animation: SlideIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    transition: all 0s;
+
+}
+
+.KillListItem:hover{
+    box-shadow: 4px 4px 0px 4px rgba(42, 168, 242, 1);
+    animation-name: ShadowColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ShadowColor {
+    0%{box-shadow: 4px 4px 0px 4px rgba(42, 168, 242, 1);}
+    25%{box-shadow: 4px 4px 0px 4px rgba(139, 212, 72, 1);}
+    40%{box-shadow: 4px 4px 0px 4px rgba(250, 228, 66, 1);}
+    55%{box-shadow: 4px 4px 0px 4px rgba(251, 169, 73, 1);}
+    70%{box-shadow: 4px 4px 0px 4px rgba(255, 99, 85, 1);}
+    85%{box-shadow: 4px 4px 0px 4px rgba(156, 79, 150, 1) ;}
+    100%{box-shadow: 4px 4px 0px 4px rgba(42, 168, 242, 1);}
+}
+
+
+@keyframes SlideIn {
+    from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+}
+
+// rgba(42, 168, 242, 1)
+// rgba(139, 212, 72, 1)
+// rgba(250, 228, 66, 1)
+// rgba(251, 169, 73, 1)
+// rgba(255, 99, 85, 1)
+// rgba(156, 79, 150, 1) 

@@ -26,36 +26,9 @@ a {
 
 a:hover {
   text-decoration: none;
-  -webkit-animation-name: LinkColor;
-          animation-name: LinkColor;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes LinkColor {
-  0% {
-    color: rgb(42, 168, 242);
-  }
-  25% {
-    color: rgb(139, 212, 72);
-  }
-  40% {
-    color: rgb(250, 228, 66);
-  }
-  55% {
-    color: rgb(251, 169, 73);
-  }
-  70% {
-    color: rgb(255, 99, 85);
-  }
-  85% {
-    color: rgb(156, 79, 150);
-  }
-  100% {
-    color: rgb(42, 168, 242);
-  }
+  animation-name: LinkColor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes LinkColor {
@@ -202,7 +175,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   overflow: hidden;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   display: inline-block;
   justify-content: space-evenly;
@@ -216,18 +188,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
   justify-content: space-evenly;
   min-height: 100%;
   gap: var(--gap);
-  -webkit-animation-name: marqueeAnimLeft;
-          animation-name: marqueeAnimLeft;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 45s;
-          animation-duration: 45s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: marqueeAnimLeft;
+  animation-timing-function: linear;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
   margin-left: 2rem;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -237,18 +204,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
   justify-content: space-evenly;
   min-height: 100%;
   gap: var(--gap);
-  -webkit-animation-name: marqueeAnimRight;
-          animation-name: marqueeAnimRight;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 45s;
-          animation-duration: 45s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: marqueeAnimRight;
+  animation-timing-function: linear;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
   margin-right: 2rem;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -257,22 +219,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-family: ibm;
   font-size: 800%;
   color: ghostwhite;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
-}
-
-@-webkit-keyframes marqueeAnimLeft {
-  from {
-    transform: translateY(0) rotate(180deg);
-  }
-  to {
-    transform: translateY(calc(-100% - var(--gap))) rotate(180deg);
-  }
 }
 
 @keyframes marqueeAnimLeft {
@@ -283,43 +234,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
     transform: translateY(calc(-100% - var(--gap))) rotate(180deg);
   }
 }
-@-webkit-keyframes marqueeAnimRight {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(calc(-100% - var(--gap)));
-  }
-}
 @keyframes marqueeAnimRight {
   from {
     transform: translateY(0);
   }
   to {
     transform: translateY(calc(-100% - var(--gap)));
-  }
-}
-@keyframes LinkColor {
-  0% {
-    color: rgb(42, 168, 242);
-  }
-  25% {
-    color: rgb(139, 212, 72);
-  }
-  40% {
-    color: rgb(250, 228, 66);
-  }
-  55% {
-    color: rgb(251, 169, 73);
-  }
-  70% {
-    color: rgb(255, 99, 85);
-  }
-  85% {
-    color: rgb(156, 79, 150);
-  }
-  100% {
-    color: rgb(42, 168, 242);
   }
 }
 .KillListPage {
@@ -382,7 +302,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-bottom: 2rem;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -392,7 +311,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: ghostwhite;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -430,7 +348,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-bottom: 1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -476,7 +393,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: ghostwhite;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 @media (max-width: 1250px) {
@@ -492,51 +408,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-shadow: 4px 4px 0px 4px rgb(42, 168, 242);
   height: 5rem;
   margin-left: -4px;
-  -webkit-animation: SlideIn;
-          animation: SlideIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: SlideIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
   transition: all 0s;
 }
 
 .KillListItem:hover {
   box-shadow: 4px 4px 0px 4px rgb(42, 168, 242);
-  -webkit-animation-name: ShadowColor;
-          animation-name: ShadowColor;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes ShadowColor {
-  0% {
-    box-shadow: 4px 4px 0px 4px rgb(42, 168, 242);
-  }
-  25% {
-    box-shadow: 4px 4px 0px 4px rgb(139, 212, 72);
-  }
-  40% {
-    box-shadow: 4px 4px 0px 4px rgb(250, 228, 66);
-  }
-  55% {
-    box-shadow: 4px 4px 0px 4px rgb(251, 169, 73);
-  }
-  70% {
-    box-shadow: 4px 4px 0px 4px rgb(255, 99, 85);
-  }
-  85% {
-    box-shadow: 4px 4px 0px 4px rgb(156, 79, 150);
-  }
-  100% {
-    box-shadow: 4px 4px 0px 4px rgb(42, 168, 242);
-  }
+  animation-name: ShadowColor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes ShadowColor {
@@ -560,14 +444,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
   100% {
     box-shadow: 4px 4px 0px 4px rgb(42, 168, 242);
-  }
-}
-@-webkit-keyframes SlideIn {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
   }
 }
 @keyframes SlideIn {

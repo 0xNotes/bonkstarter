@@ -57,9 +57,9 @@ export default function HomePage() {
   function textRepeat(int: number) {
     let s = ""
     for (let i = 0; i < (int - 1); i++) {
-      s += "SNACKER ";
+      s += "SECRET ";
     }
-    s += "SNACKER";
+    s += "SECRET";
     return s;
   }
 
@@ -99,7 +99,7 @@ export default function HomePage() {
 
         <div className="CenterContainer">
           <DescriptionBox />
-          <div className="ContentStyleContainer">
+          {/* <div className="ContentStyleContainer">
             <PictureBox text="CONTENT IMAGE" image={contentImage} />
             <PictureBox text="STYLE IMAGE" image={styleImage} />
           </div>
@@ -116,7 +116,7 @@ export default function HomePage() {
           </div>
           
           <div className="KillListHomeContainer">
-          <KillList/>
+          <KillList/> */}
           </div>
 
           {/* <div
@@ -130,7 +130,6 @@ export default function HomePage() {
             >
               <img src={snacker}></img>
             </div> */}
-        </div>
 
         {isLargeScreen ? (<div className="Marquee">
           <div className="MarqueeInnerRight">
